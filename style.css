@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #86A789,#B2C8BA, #D2E3C8, #EBF3E8
+  );
+  transition: background-color 0.5s ease;
+}
+
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 45vh;
+  width: 50vh; 
+  transition: transform 0.5s ease;
+}
+
+form {
+  margin: 2rem 0 1rem 0;
+}
+
+form select,
+button,
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.75rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form input {
+  border: 1px solid lightgray;
+  font-size: 1rem;
+  height: 3rem;
+  padding-left: 0.5rem;
+  transition: border-color 0.3s ease;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.dropdown i {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.select-container img {
+  max-width: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.select-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  border-radius: 0.5rem;
+  border: 1px solid lightgray;
+  transition: border-color 0.3s ease;
+}
+
+.select-container select {
+  font-size: 1rem;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.msg {
+  margin: 2rem 0 2rem 0;
+}
+
+form button {
+  height: 3rem;
+  background-color: #af4d98;
+  color: #fff;
+  font-size: 1.15rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form select:hover,
+button:hover,
+input:hover,
+.form select:focus,
+button:focus,
+input:focus {
+  background-color: #e2b4ff;
+}
+
+.form button:hover,
+.form button:focus {
+  background-color: #7d3073;
+}
+
+body:hover {
+  background-color: #ffe8a1;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+.dropdown i:hover {
+  transform: rotate(45deg);
+}
+
+.select-container:hover {
+  border-color: #7d3073;
+}
+
+.select-container:hover img {
+  transform: scale(1.2);
+}
